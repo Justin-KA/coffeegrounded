@@ -24,30 +24,98 @@
 			<ul class="sm:flex justify-end items-center
 						gap-x-7 gap-y-5 mt-0
 						text-primary-color-one">
-				<li>a propos de Grounded</li>
-				<li>menu</li>
-				<li>nos produits</li>
-				<li>nos fournisseurs</li>
-				<li>truc barista</li>
-				<li>contact</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">a propos de Grounded</a>
+				</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">menu</a>
+				</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">nos produits</a>
+				</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">nos fournisseurs</a>
+				</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">trucs barista</a>
+				</li>
+				<li>
+					<a href="#!" class="hover:text-secondary-color-two">contact</a>
+				</li>
 			</ul>
 
 		</nav>
 
-		<main>
-			<!-- Page Content -->
-			<div class="w-[400px] relative z-[-1] mx-[100]">
+		<main h-full>
+			<!-- Backing picture -->
+			<div class="w-[400px] relative z-[-1] mx-[100]
+						pl-[90px] pt-[40px]
+						opacity-75">
 				<img src="./graphics/photos Grounded web copy/jorik-blom-HP4VFH70LMc-unsplash.jpg" 
 				alt="background image coffee" 
 				class="rounded-full absolute z-0">
 			</div>
 
-			<section class="text-center py-32 z-10">
-				<h1 class="text-9xl font-bold text-primary-color-one">GROUNDED</h1>
-				<p class="text-lg">les pieds sur terre</p>
+			<section class="flex flex-col py-[240px]">
+				<h1 class="text-9xl font-bold text-center w-full text-primary-color-one">GROUNDED</h1>
+				<p class="pr-[400px] text-right text-2xl">les pieds sur terre</p>
 			</section>
+
+
+			   <!-- Footer -->
+			<footer class="h-full bg-primary-color-one text-primary-color-two pb-3 pt-10 lg:pb-20">
+
+				<div class="flex flex-wrap justify-around gap-y-16 gap-x-7 mb-16">
+		  
+				  <!-- About -->
+				  <div class="text-center mx-2 mb-5">
+					
+					<p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minima?</p>
+		  
+					<!-- Get Icons From Wherever and use it here -->
+					<div class="flex flex-wrap gap-x-7 justify-center gap-y-5 mt-5">
+					  <a href="#!" class="text-primary-color hover:opacity-50">
+						icon
+					  </a>
+					  <a href="#!" class="text-primary-color hover:opacity-50">
+						icon
+					  </a>
+					  <a href="#!" class="text-primary-color hover:opacity-50">
+						icon
+					  </a>
+					</div>
+				  </div>
+
+		  
+				  <!-- Resources (Delete This if your website does not support newsletter) -->
+				  <div class="mx-10 lg:mx-16">
+					<h2 class="font-bold text-xl mb-4">Resources</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur.</p>
+		  
+					<form action="" class="mt-5 flex">
+					  <input type="email" name="email"
+						class="bg-primary-color-two outline-0 py-2 px-2 rounded-tl rounded-bl w-full caret-primary-color text-primary-color-one"
+						placeholder="Enter email here...">
+					  <button type="submit"
+						class="bg-primary-color px-2 font-semibold text-primary-color-two rounded-tr rounded-br">Subscribe</button>
+		  
+					</form>
+				  </div>
+				  <!-- Resources ends here -->
+		  
+				</div>
+		  
+				
+				<!-- Sub Footer -->
+				<div class="h-1 w-full  object-contain"></div>
+				<!-- Copyright -->
+				<p class="text-center mt-8 mb-4 font-semibold">Copyright &copy; <span id="year"></span>. All
+				  Rights
+				  Reserved</p>
+		  
+			  </footer>
 		</main>
-		
+
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

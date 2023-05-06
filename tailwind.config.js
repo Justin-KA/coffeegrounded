@@ -16,7 +16,7 @@ module.exports = {
         'primary-color-one': '#371d0f',
         'primary-color-two': '#fff4de',
         'secondary-color-one': '#2c1503',
-        'secondary-color-one': '#89471a'
+        'secondary-color-two': '#89471a'
       }
     },
   },
