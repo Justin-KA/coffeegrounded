@@ -19,11 +19,21 @@
 
 		<nav class="fixed top-0 z-20 w-full
 					justify-between
-					px-4 md:px-5 lg:px-16 py-2">
+					px-3 md:px-5 lg:px-16 py-2">
+
+			<!-- Hamburger -->
+			<button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
+				<!-- aria label is for accessibility -->
+				<div class="w-6 h-1 bar bg-primary-color-one rounded-lg duration-500"></div>
+				<div class="w-6 h-1 bar bg-primary-color-one rounded-lg duration-500"></div>
+				<div class="w-6 h-1 bar bg-primary-color-one rounded-lg duration-500"></div>
+			</button>
+			
 
 			<ul class="sm:flex justify-end items-center
 						gap-x-7 gap-y-5 mt-0
-						text-primary-color-one">
+						text-primary-color-one"
+				id="links">
 				<li>
 					<a href="#!" class="hover:text-secondary-color-two">a propos de Grounded</a>
 				</li>
@@ -48,24 +58,25 @@
 
 		<main>
 			<!-- Logo -->
-			<div class=" z-[-1] relative w-[150px] opacity-25">
+			<div class="hidden md:block z-[-1] relative opacity-25">
 				<img src="./graphics/Logo/Logos_déclinaison-10.png" 
 				alt="background image coffee" 
-				class="rounded-none absolute">
+				class=" absolute w-[150px] ">
 			</div>
 
 			<!-- Backing picture -->
-			<div class="w-[380px] relative z-[-1]
-						pl-[180px] pt-[100px] 
-						opacity-75">
+			<div class=" relative z-[-1]
+						pl-[30px] pt-[100px] 
+						opacity-75
+						md:pl-[180px]">
 				<img src="./graphics/photos Grounded web copy/jorik-blom-HP4VFH70LMc-unsplash.jpg" 
 				alt="background image coffee" 
-				class="rounded-full absolute">
+				class="rounded-full absolute w-[380px]">
 			</div>
 
 			<section class="flex flex-col py-[240px]">
-				<h1 class="text-9xl font-bold text-center w-full text-primary-color-one ml-[100px]">GROUNDED</h1>
-				<p class="pr-[400px] text-right text-2xl">les pieds sur terre</p>
+				<h1 class="text-9xl font-bold text-center w-full text-primary-color-one pl-[190px]">GROUNDED</h1>
+				<p class="pr-[300px] text-right text-2xl">les pieds sur terre</p>
 			</section>
 
 
@@ -124,5 +135,6 @@
 		</main>
 
 		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/navbar.js"></script>
 	</body>
 </html>
